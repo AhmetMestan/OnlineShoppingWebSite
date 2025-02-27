@@ -1,0 +1,46 @@
+.login-container {
+    border: 2px solid #ccc; /* Çerçeve rengi */
+    border-radius: 10px; /* Köşe yuvarlama */
+    padding: 40px; /* İç boşluk */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    background-color: #fff; /* Beyaz arka plan */
+  }
+  
+  .login-container img {
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-secondary {
+    background-color: #28a745;
+    color: white;
+  }
+
+  .cart-button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.cart-button:hover {
+    background-color: green;
+    color: white;
+}
+
+  
