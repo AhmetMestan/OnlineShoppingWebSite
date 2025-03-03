@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { FaShoppingCart, FaHeart, FaRegHeart } from 'react-icons/fa'
 import { singleProduct } from '../services/productService'
 import { Product } from '../models/IProduct'
+import { islikesControl } from '../utils/store'
  
 
 
@@ -18,7 +19,11 @@ function ProductDetail() {
   const [IsLiked, setIsLiked] = useState(false)
 
   const handleLike = () => {
-    setIsLiked(!IsLiked);
+    const likeStatus = !IsLiked
+    setIsLiked(likeStatus)
+    const pid = params.pid
+    if (item && pid) 
+      islikesControl(pid)
   };
 
   
@@ -32,6 +37,8 @@ function ProductDetail() {
       })
     }
   }, [])
+
+
 
   return (
     <>
